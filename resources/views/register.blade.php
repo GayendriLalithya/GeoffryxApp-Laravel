@@ -9,14 +9,14 @@
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/hbcmsproject/resources/css/register.css">
+    <link rel="stylesheet" href="/geoffryx/resources/css/register.css">
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 signup-section">
                 <h1>Create a new account</h1>
-                <form>
+                <form action="{{ route('register.store') }}" method="POST">
                     <div class="mb-3">
                         <label class="form-label">Full Name</label>
                         <input type="text" class="form-control" required>
